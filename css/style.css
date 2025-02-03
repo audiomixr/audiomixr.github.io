@@ -1,0 +1,97 @@
+html {
+    margin: 0;
+    padding: 0;
+}
+
+html * {
+    color: white;
+    font-family: "Commissioner", serif;
+}
+
+
+body {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+}
+
+.fader {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 800px;
+    z-index: 100;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, transparent 0%,transparent 50%, black 100%)
+}
+
+#teaser {
+    background: black;
+    width: 100%;
+    height: 800px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    right: 0;
+    overflow: hidden;
+}
+
+/* Style the video: 100% width and height to cover the entire window */
+#myVideo {
+  position: relative;
+  right: 0;
+  top: -280px;
+  min-width: 100%;
+  min-height:100%;
+}
+
+/* Add some content at the bottom of the video/page */
+.content {
+  position: fixed;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Style the button used to pause/play the video */
+#myBtn {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+section {
+    padding: 0 15%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+section > * {
+    width: 100%;
+    text-align: center;
+}
+
+h1 {
+    font-size: 80px;
+    margin: 0;
+}
+
+p {
+    font-size: 30px;
+    margin-top: 20px;
+    color: #848484;
+}
