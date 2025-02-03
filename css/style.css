@@ -95,3 +95,41 @@ p {
     margin-top: 20px;
     color: #848484;
 }
+footer {
+    width: 100%;
+    height: max-content;
+}
+ul {
+    list-style-type:none;
+    padding:0px;
+    margin:0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+li {
+   display:inline;
+    width: max-content;
+    background-color:#2d2d2d;
+    border-radius: 25px;
+    transition: all 0.2s ease-in-out;
+    margin: 0 50px;
+    /*box-shadow: 0px -2px 20px 2px rgba(255, 255, 255, 0.4);*/
+}
+
+
+li:hover {
+    cursor: pointer;
+    background-color:#787878;
+}
+
+
+li:hover p {
+    color:white;
+}
+
+li p {
+    margin: 10px 20px;
+    transition: all 0.2s ease-in-out;
+}
