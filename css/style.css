@@ -158,3 +158,30 @@ li p {
     justify-content: center;
     align-items: center;
 }
+
+.demo-img {
+    border-radius: .75rem !important;
+    width: 400px;
+    height: 200px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;;
+}
+
+@media screen and (max-width: 767px){
+    #myVideo {
+        top:0;
+        width: unset;
+        height: 55vh;
+    }
+
+    h1 {
+        font-size: 50px;
+    }
+    section {
+        padding: 0 5%;
+    }
+    
+}
