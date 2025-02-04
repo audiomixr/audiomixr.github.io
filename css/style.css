@@ -181,22 +181,34 @@ img {
     margin-top: 15px;
     margin-bottom: 30px;
 }
-.yt-demos {
+.main-demo {
   display: grid;
   grid-template-columns: 5% [ini] 1fr [end] 5%;
+  grid-template-rows: 50px [ini] 1fr [end] 50px;
   width: 100%;
   height: max-content;
 }
 
-.yt-demos > div {
-    start
+.text-content p {
+    margin-top: 0 !important;
+}
+
+#mainDemo {
+    grid-column-start: ini;
+    grid-column-end: end;
+    grid-row-start: ini;
+    grid-row-end: end;
+    width: 100%;
+
+  border-radius: .75rem !important;
+  overflow: hidden;
 }
 
 iframe {
     /*display:block;*/
 }
 
-@media screen and (max-width: 767px){
+@media screen and (max-width: 994px){
     #myVideo {
         top:0;
         width: unset;
@@ -217,6 +229,7 @@ iframe {
     .institutions-list p, .text-content p {
         text-align: center;
     }
+
 
     ul {
         display: flex;
