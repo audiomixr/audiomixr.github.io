@@ -27,7 +27,7 @@ body {
     z-index: 100;
     margin: 0;
     padding: 0;
-    background: linear-gradient(to top, transparent 0%,transparent 70%, black 100%)
+    background: linear-gradient(to bottom, black  0%,transparent 30%, transparent 100%);
 }
 
 #teaser {
