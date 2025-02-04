@@ -108,6 +108,7 @@ ul {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    margin-bottom: 20px;
 }
 li {
    display:inline;
@@ -151,23 +152,34 @@ li p {
     color: white;
 }
 
-.institutions-list {
+.institutions-list, .text-content {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
 
+.demos, .demos-2 {
+    display: grid;
+    grid-template-columns: 1fr 0.5fr 1fr;
+}
+
 .demo-img {
-    border-radius: .75rem !important;
-    width: 400px;
-    height: 200px;
+    width: 100%;
+    height: min-content;
 }
 
 img {
     max-width: 100%;
     height: auto;;
+}
+
+.designed-by {
+    color: white;
+    font-size: 20px;
+    margin-top: 15px;
+    margin-bottom: 30px;
 }
 
 @media screen and (max-width: 767px){
@@ -184,4 +196,21 @@ img {
         padding: 0 5%;
     }
     
+    .institutions-list, .text-content {
+        padding: 0 5%;
+    }
+
+    .institutions-list p, .text-content p {
+        text-align: center;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+    }
+
+    .demos {
+        grid-template-columns: 1fr;
+    }
 }
