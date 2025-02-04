@@ -27,7 +27,7 @@ body {
     z-index: 100;
     margin: 0;
     padding: 0;
-    background: linear-gradient(to bottom, transparent 0%,transparent 70%, black 100%)
+    background: linear-gradient(to top, transparent 0%,transparent 70%, black 100%)
 }
 
 #teaser {
@@ -45,7 +45,7 @@ body {
 #myVideo {
   position: relative;
   right: 0;
-  top: -280px;
+  top: -400px;
   min-width: 100%;
   min-height:100%;
 }
@@ -180,6 +180,20 @@ img {
     font-size: 20px;
     margin-top: 15px;
     margin-bottom: 30px;
+}
+.yt-demos {
+  display: grid;
+  grid-template-columns: 5% [ini] 1fr [end] 5%;
+  width: 100%;
+  height: max-content;
+}
+
+.yt-demos > div {
+    start
+}
+
+iframe {
+    /*display:block;*/
 }
 
 @media screen and (max-width: 767px){
