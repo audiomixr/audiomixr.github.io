@@ -16,7 +16,7 @@
         <h1>AudioMiXR</h1>
         <h2>Spatial Audio Object Manipulation for Sound Design<br> in Augmented Reality</h2>
         <div class="authors-list">
-          <p><a href="">Brandon Woodard</a><sup>*,1</sup></p>
+          <p><a href="https://sites.google.com/brown.edu/brandonwoodard/home">Brandon Woodard</a><sup>*,1</sup></p>
           <p><a href="https://margaritageleta.github.io">Margarita Geleta</a><sup>*,2</sup></p>
         </div>
         <div class="authors-list">
@@ -28,21 +28,21 @@
           <p><sup>1</sup>Brown University, <sup>2</sup>UC Berkeley, <sup>3</sup>University of Central Florida,  <sup>4</sup>Dolby Laboratories</p>
         </div>
         <ul>
-          <li><a href="https://www.youtube.com/watch?v=sC2iLHWMoa8" target="_blank" rel="noreferrer"><p>Watch demo</p></a></li>
-          <li><a href="https://arxiv.org/abs/2502.02929"><p>Read preprint</p></a></li>
+          <li><a href="#yt-demos"><p>Watch demos</p></a></li>
+          <li><a href="https://arxiv.org/abs/2502.02929" target="_blank" rel="noreferrer"><p>Read preprint</p></a></li>
         </ul>
       </div>
 
       <div class="demos">
-          <div class="demo-img">
+          <div id="demo-img-1" class="demo-img">
             <img src="static/mixing_ar.jpg">
           </div>
 
-          <div class="demo-img">
+          <div id="demo-img-2" class="demo-img">
             <img src="static/cinema2.png">
           </div>
 
-          <div class="demo-img">
+          <div id="demo-img-3" class="demo-img">
             <img src="static/mixing_ar_robot.jpg">
           </div>
       </div>
@@ -52,33 +52,51 @@
         <source src="./static/teaser.m4v" type="video/mp4">
         </video>
     </div>
-    <div class="text-content">
-      <p>A 6DoF AR interface for spatial audio manipulation<br>deployed on Apple Vision Pro for 3D sound design.
-      </p>
-      <p class="designed-by">Designed in San Francisco</p>
-    </div>
+    
 
     <div class="yt-demos"> 
-      <div style="text-align: center; width: 100%;">
+      <h3 id="yt-demos">Demos [<a href="https://www.youtube.com/playlist?list=PLCLVTb7c7t-Kz7wi-sBIBR2j0DIE47rEB" target="_blank" rel="noreferrer">link to playlist</a>]</h3>
+      <div id="yt-demo-1" style="text-align: center; width: 100%;">
         <iframe scrolling="no" frameborder="no" clocktype="html5" 
          src="https://www.youtube.com/embed/sC2iLHWMoa8"frameborder="0" allowfullscreen></iframe>
       </div>    
 
-      <div style="text-align: center; width: 100%;">
+      <div id="yt-demo-2" style="text-align: center; width: 100%;">
         <iframe scrolling="no" frameborder="no" clocktype="html5" 
          src="https://www.youtube.com/embed/0N0OMdcK5-Y"frameborder="0" allowfullscreen></iframe>
-      </div>   
+      </div>  
+      
+      
+      <p id="yt-demo-1-caption"> AudioMiXR facilitates mixing immersive cinematic experiences. Demo showcasing a soundscape in a cinema. </p>
+      <p id="yt-demo-2-caption"> AudioMiXR allows for audio mixing in any physical environment. Demo showcasing audio mixing in AR and in VR.</p>
 
-      <div style="text-align: center; width: 100%;">
+      <div id="yt-demo-3" style="text-align: center; width: 100%;">
         <iframe scrolling="no" frameborder="no" clocktype="html5" 
          src="https://www.youtube.com/embed/5ZfYX7aO32M"frameborder="0" allowfullscreen></iframe>
       </div>   
 
-      <div style="text-align: center; width: 100%;">
+      <div id="yt-demo-4" style="text-align: center; width: 100%;">
         <iframe scrolling="no" frameborder="no" clocktype="html5" 
-         src="https://www.youtube.com/embed/X8l6lY8yqhI"frameborder="0" allowfullscreen></iframe>
-      </div>   
+         src="https://www.youtube.com/embed/X8l6lY8yqhI?si=RIaFG73DY8vodnZ5"frameborder="0" allowfullscreen></iframe>
+      </div> 
+      
+      
+      <p id="yt-demo-3-caption"> AudioMiXR being used to build a camping site soundscape. Illustration of collaborative mixing in AR.</p>
+      <p id="yt-demo-4-caption"> Illustration of AudioMiXR being used on DJ stages at Temple Nightclub in San Francisco.</p>
+
     </div>
+
+    <div class="text-content">
+      <h3>Abstract [<a href="https://arxiv.org/abs/2502.02929" target="_blank" rel="noreferrer">link to preprint</a>]</h3>
+      <p>We present <span>AudioMiXR</span>, an augmented reality (AR) interface intended to assess how users manipulate virtual audio objects situated in their physical space using <span>six degrees of freedom (6DoF)</span> deployed on a head-mounted display (Apple Vision Pro) for 3D sound design. Existing tools for 3D sound design are typically constrained to desktop displays, which may limit spatial awareness of mixing within the execution environment. Utilizing an XR HMD to create soundscapes may provide a real-time test environment for 3D sound design, as modern HMDs can provide precise spatial localization assisted by cross-modal interactions. However, there is no research on design guidelines specific to sound design with six degrees of freedom (6DoF) in XR. To provide a first step toward identifying design-related research directions in this space, we conducted an exploratory study where we recruited 27 participants, consisting of expert and non-expert sound designers. The goal was to assess design lessons that can be used to inform future research venues in 3D sound design. We ran a within-subjects study where users designed both a music and cinematic soundscapes. After thematically analyzing participant data, we constructed two design lessons: (1) Proprioception for AR Sound Design, and (2) Balancing Audio-Visual Modalities in AR GUIs. Additionally, we provide application domains that can benefit most from 6DoF sound design based on our results.
+      </p>
+    </div>
+
+    <div class="featured-by">
+      <h3>Featured in [<a ref="">Upcoming</a>]</h3>
+    </div>
+
+    <p class="designed-by">Designed in San Francisco</p>
 
     <div class="teaser">
       <div class="fader"> </div>

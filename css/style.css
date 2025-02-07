@@ -114,6 +114,15 @@ h2 {
     margin-bottom: 20px;
 }
 
+h3 {
+    font-size: var(--mid-sz);
+    margin: 0;
+    color: #c5c5c5;
+    font-weight: bold;
+    grid-column-start: ini;
+    grid-column-end: end;
+}
+
 p {
     font-size: var(--sm-sz);
     margin-top: 20px;
@@ -137,9 +146,10 @@ li {
    display:inline;
     width: max-content;
     background-color:#2d2d2d;
-    border-radius: 25px;
+    border-radius: 20px;
     transition: all 0.2s ease-in-out;
     margin: 0 50px;
+    padding: 0 10px;
     /*box-shadow: 0px -2px 20px 2px rgba(255, 255, 255, 0.4);*/
 }
 
@@ -157,6 +167,12 @@ li:hover p {
 li p {
     margin: 10px 0;
     transition: all 0.2s ease-in-out;
+    font-weight: bold;
+    color: white;
+}
+
+li a {
+    text-decoration: none;
 }
 
 .authors-list {
@@ -197,10 +213,18 @@ li p {
 
 .yt-demos {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: [ini] 1fr [mid] 1fr [end];
+    grid-template-rows: [first] max-content [second] 1fr [third] max-content [fourth] 1fr [fifth] max-content;
     row-gap: 25px;
     column-gap: 25px;
+}
+
+.yt-demos p {
+    margin: 0;
+    color:  #c5c5c5;
+    text-align: left;
+    margin-top: -10px;
+    margin-bottom: -5px;
 }
 
 
@@ -222,7 +246,7 @@ img {
 .designed-by {
     color: white;
     font-size: 20px;
-    margin-top: 15px;
+    margin-top: 0;
     margin-bottom: 0;
 }
 .main-demo {
@@ -237,7 +261,18 @@ img {
 }
 
 .text-content p {
-    margin-top: 0 !important;
+    text-align: left;
+    margin-bottom: 0;
+    color: #c5c5c5;
+}
+
+.featured-by p {
+    margin-bottom: 0;
+}
+
+.text-content span {
+    font-weight: bold;
+    color: #c5c5c5;
 }
 
 #mainDemo {
@@ -251,6 +286,18 @@ img {
   overflow: hidden;
 }
 
+#yt-demo-1, #yt-demo-2 {
+    grid-row-start: second;
+}
+#yt-demo-1-caption, #yt-demo-2-caption {
+    grid-row-start: third;
+}
+#yt-demo-3, #yt-demo-4 {
+    grid-row-start: fourth;
+}
+#yt-demo-3-caption, #yt-demo-4-caption {
+    grid-row-start: fifth;
+}
 
 @media screen and (max-width: 994px){
     #myVideo {
@@ -262,15 +309,12 @@ img {
     h1 {
         font-size: 50px;
     }
-    section {
-        padding: 0 5%;
-    }
     
-    .institutions-list, .text-content {
+    .institutions-list {
         padding: 0 5%;
     }
 
-    .institutions-list p, .text-content p {
+    .institutions-list p {
         text-align: center;
     }
 
@@ -282,6 +326,49 @@ img {
     }
 
     .demos {
-        grid-template-columns: 1fr;
+        grid-template-columns: [mi] 1fr [me];
     }
+
+    #demo-img-2, #demo-img-3 {
+        display: none;
+    }
+
+    .yt-demos {
+        grid-template-columns: [ini]1fr[end];
+        grid-template-rows: 
+            [first] max-content 
+            [second] 1fr
+            [third] max-content
+            [fourth] 1fr
+            [fifth] max-content
+            [sixth] 1fr
+            [seventh] max-content
+            [eighth] 1fr
+            [ninth] max-content;
+    }
+    #yt-demo-1 {
+        grid-row-start: second;
+    }
+    #yt-demo-1-caption {
+        grid-row-start: third;
+    }
+    #yt-demo-2 {
+        grid-row-start: fourth;
+    }
+    #yt-demo-2-caption {
+        grid-row-start: fifth;
+    }
+    #yt-demo-3 {
+        grid-row-start: sixth;
+    }
+    #yt-demo-3-caption {
+        grid-row-start: seventh;
+    }
+    #yt-demo-4 {
+        grid-row-start: eighth;
+    }
+    #yt-demo-4-caption {
+        grid-row-start: ninth;
+    }
+
 }
