@@ -306,6 +306,10 @@ img {
         height: 55vh;
     }
 
+    section {
+        grid-template-columns: [mi] 5% [ini] 1fr [end] 5% [me];
+    }
+
     h1 {
         font-size: 50px;
     }
